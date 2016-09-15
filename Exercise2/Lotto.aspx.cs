@@ -7,13 +7,20 @@ using System.Web.UI.WebControls;
 
 public partial class Lotto : System.Web.UI.Page
 {
+    string type = "";
     protected void Page_Load(object sender, EventArgs e)
     {
+        List<string> types = new List<string>();
+        types.Add("Suomi");
+        types.Add("VikingLotto");
 
+        ddlType.DataSource = types;
+        ddlType.DataBind();
     }
 
     protected void btnDraw_Click(object sender, EventArgs e)
     {
-
+        
+        
     }
 }
