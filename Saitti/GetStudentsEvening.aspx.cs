@@ -20,6 +20,7 @@ public partial class GetStudentsEvening : System.Web.UI.Page
         DataTable dt = JAMK.ICT.Data.DBPlacebo.Get3TestStudents();
         gvStudents.DataSource = dt;
         gvStudents.DataBind();
+        lblMessage.Text = "Three students read from precreated data";
     }
 
     protected void btnGetAll_Click(object sender, EventArgs e)
@@ -38,5 +39,14 @@ public partial class GetStudentsEvening : System.Web.UI.Page
             // where to display the exception message?
             lblMessage.Text = ex.Message;
         }
+    }
+
+    protected void btnGet4_Click(object sender, EventArgs e)
+    {
+        // get student object from bl and bind to control
+        var students = new JAMK.ICT.BL.Oppilaat().Hae4TestiOppilasta();
+        gvStudents.DataSource = students;
+        gvStudents.DataBind();
+        lblMessage.Text = "Four student objects read from bl";
     }
 }
