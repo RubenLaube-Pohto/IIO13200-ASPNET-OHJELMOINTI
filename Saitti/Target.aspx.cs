@@ -29,8 +29,17 @@ public partial class Target : System.Web.UI.Page
         {
             if (kex == "Message")
             {
-                msg += Request.Cookies[kex].Value;
+                msg += Request.Cookies[kex].Value + "<br/>";
             }
+        }
+
+        // Case 4: Property
+        // read property of previous page
+        msg += "From Property: ";
+        var previousPage = PreviousPage;
+        if (previousPage != null)
+        {
+            msg += previousPage.SecretMessage;
         }
 
         // display msg

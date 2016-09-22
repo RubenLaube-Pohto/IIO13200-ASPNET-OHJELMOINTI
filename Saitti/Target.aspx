@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Target.aspx.cs" Inherits="Target" %>
+<%@ PreviousPageType VirtualPath="~/Source.aspx" %>
 
 <!DOCTYPE html>
 
