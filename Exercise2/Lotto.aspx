@@ -13,7 +13,8 @@
         <asp:DropDownList ID="ddlType" runat="server"></asp:DropDownList>
         <p>Montako riviä arvotaan:</p>
         <asp:TextBox ID="txtLines" runat="server"></asp:TextBox>
-        <asp:Button ID="btnDraw" runat="server" Text="Draw numbers" OnClick="btnDraw_Click"/>
+        <asp:Button ID="btnDraw" runat="server" Text="Draw numbers" OnClick="btnDraw_Click"/><br />
+        <asp:Label ID="lblOutput" runat="server" Text=""></asp:Label>
     </div>
     </form>
 </body>

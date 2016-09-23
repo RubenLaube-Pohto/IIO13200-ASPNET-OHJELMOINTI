@@ -1,7 +1,7 @@
 ﻿/*
  * This file is part of the IIO11300 coursework.
  *
- * Created: 22.1.2016 Modified: 23.1.2016
+ * Created: 22.1.2016 Modified: 23.9.2016
  * Authors: Ruben Laube-Pohto
  */
 using System;
@@ -100,7 +100,7 @@ namespace JAMK.IT.IIO11300
                     default: { } break;
                     #endregion
                 }
-                result += '\n';
+                result += "<br>";
             }
 
             return result;
