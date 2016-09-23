@@ -9,11 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        Valittu päivä: <div id="selectedDate" runat="server"></div>
-        Valitun päivän ja tämän päivän erotus: <div id="dateDifference" runat="server"></div>
-        <asp:Button ID="Button1" runat="server" Text="< vuosi" />
-        <asp:Button ID="Button2" runat="server" Text="vuosi >" /><br />
-        <asp:Calendar ID="calMyCalendar" runat="server"></asp:Calendar>
+        Valittu päivä: <span id="selectedDate" runat="server"></span><br />
+        Valitun päivän ja tämän päivän erotus: <span id="dateDifference" runat="server"></span><br />
+        <asp:Button ID="btnBack" runat="server" Text="< vuosi" OnClick="btnBack_Click"/>
+        <asp:Button ID="btnForward" runat="server" Text="vuosi >" OnClick="btnForward_Click"/><br />
+        <asp:Calendar ID="calMyCalendar" runat="server" OnSelectionChanged="calMyCalendar_SelectionChanged"></asp:Calendar>
     </div>
     </form>
 </body>
