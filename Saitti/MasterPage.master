@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- is this ok here or should it be under form1? -->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <img src="Images/banner.png" />
+        <div>
+            <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <a href="Index.aspx">Home Page</a>
+            <a href="http://www.jamk.fi">JAMK</a>
+            <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
