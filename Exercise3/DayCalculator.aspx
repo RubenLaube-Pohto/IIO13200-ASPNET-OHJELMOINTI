@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        Toimii vaan menneillä päivillä, en jaksa korjata<br />
         Valittu päivä: <span id="selectedDate" runat="server"></span><br />
         Valitun päivän ja tämän päivän erotus: <span id="dateDifference" runat="server"></span><br />
         <asp:Button ID="btnBack" runat="server" Text="< vuosi" OnClick="btnBack_Click"/>
