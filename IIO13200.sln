@@ -90,6 +90,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise3", "Exercise3\", "
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Exercise4", "Exercise4\", "{502E2681-FAFC-4175-975C-1BDAC1356CE9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_10159"
+		Debug.AspNetCompiler.PhysicalPath = "Exercise4\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10159\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_10159"
+		Release.AspNetCompiler.PhysicalPath = "Exercise4\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10159\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "10159"
+		SlnRelativePath = "Exercise4\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,6 +134,10 @@ Global
 		{96E90C22-F4D8-441D-873C-C0C1E660D9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96E90C22-F4D8-441D-873C-C0C1E660D9AF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{96E90C22-F4D8-441D-873C-C0C1E660D9AF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{502E2681-FAFC-4175-975C-1BDAC1356CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502E2681-FAFC-4175-975C-1BDAC1356CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502E2681-FAFC-4175-975C-1BDAC1356CE9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{502E2681-FAFC-4175-975C-1BDAC1356CE9}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
