@@ -19,7 +19,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <p><img alt="JAMK" class="style1" src="Images/JAMKBlue.png" /></p>
+        <p><a href="Default.aspx"><img alt="JAMK" class="style1" src="Images/JAMKBlue.png" /></a></p>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
