@@ -130,6 +130,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Turva0", "Turva0\", "{76596
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "4151"
+		SlnRelativePath = "Turva0\"
 	EndProjectSection
 EndProject
 Global
