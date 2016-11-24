@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Autokauppa X - Lääkettä autokuumeeseen!</title>
+    <meta charset="utf-8" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" async></script>
+    <script defer>
+        function getCars() {
+            let uri = 'api/cars';
+            $.getJSON(uri, function (data) {
+                for (m in data) {
+                    document.getElementById('cars').innerHTML
+                        += data[m].Brand + " " + data[m].Model + ", hinta: " + data[m].Price + "€<br/>";
+                }
+            });
+        }
+
+        function format(item) {
+            return item.Brand + " " + item.Model + ", hinta: " + item.Price;
+        }
+
+        function getCar() {
+            let uri = 'api/cars/' + $('#carId').val();
+            $.getJSON(uri)
+                .done(function (data) {
+                    $('#car').text(format(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#car').text('Virhe: ' + err);
+                });
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Autokauppa X - Parhaat autot parhaaseen hintaan!</h2>
+        <input type="button" value="Hae tarjousautot" onclick="getCars();" />
+        <div id="cars" />
+    </div>
+    <div>
+        <h2>Auton haku</h2>
+        <input type="text" id="carId" size="5" />
+        <input type="button" value="Hae" onclick="getCar();" />
+        <p id="car"></p>
+    </div>
+</body>
+</html>
